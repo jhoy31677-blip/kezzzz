@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, My Love!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, #ff9a9e 0%, #fad0c4 100%);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px 60px;
+      border-radius: 30px;
+      box-shadow: 0 0 30px 5px rgba(255, 105, 180, 0.4);
+      overflow: hidden;
+    }
+
+    
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.8em;
+      color: #ff1493;
+      margin-bottom: 10px;
+      text-shadow: 0 0 15px #ff69b4, 0 0 20px #ff1493;
+      animation: glowText 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 15px #ff69b4, 0 0 20px #ff1493; }
+      to { text-shadow: 0 0 25px #ff69b4, 0 0 35px #ff1493; }
+    }
+
+    .love-note {
+      font-size: 1.25em;
+      background-color: #fff0f7;
+      display: inline-block;
+      padding: 25px 30px;
+      border-radius: 20px;
+      margin-top: 25px;
+      max-width: 600px;
+      box-shadow: 0 0 20px 3px rgba(255, 105, 180, 0.3);
+      color: #7b2158;
+      line-height: 1.5;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      user-select: none;
+      position: relative;
+      z-index: 1;
+      border: 2px solid #ff69b4;
+    }
+
+    .photo-album {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .photo-album img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .photo-album img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 20, 147, 0.5);
+    }
+
+    .counter {
+      font-size: 1.3em;
+      margin-top: 35px;
+      color: #d81e5b;
+      font-weight: 700;
+      text-shadow: 0 0 10px #ff1493;
+      animation: fadeInUp 2s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(20px); }
+    }
+
+    .quote {
+      margin-top: 40px;
+      background: #ffe4ec;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+      font-size: 1.2em;
+      color: #b30059;
+      font-style: italic;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeInQuote 2s ease forwards;
+      opacity: 0;
+    }
+
+    .quote span {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #a0004c;
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    @keyframes fadeInQuote {
+      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(20px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+
+    <!-- Heading -->
+    <h1>Happy Birthday and Happy Monthsary, My Love 💖</h1>
+
+    <!-- Love Note -->
+    <div class="love-note" aria-label="Love Note">
+      <p>
+        Happy 21st birthday and Happy Monthsary, my love! I’m so thankful when you came into my life. I'm grateful kay uban ta mag celebrate ani imong special day. You’ve brought me happiness, love, and daghan pa mga unforgettable moments together. I can’t wait to see what amazing things pa ang muabotay sa atoa both sa future. Enjoy your special day, my love. I love you always, my pretty pretty lady 💜💜💜
+      </p>
+    </div>
+
+    <!-- 📸 Photo Album -->
+    <div class="photo-album">
+      <img src="images/photo1.jpg" alt="Memory 1" loading="lazy" />
+      <img src="images/photo2.jpg" alt="Memory 2" loading="lazy" />
+      <img src="images/photo3.jpg" alt="Memory 3" loading="lazy" />
+      <img src="images/photo4.jpg" alt="Memory 4" loading="lazy" />
+      <img src="images/photo5.jpg" alt="Memory 5" loading="lazy" />
+	  <img src="images/photo6.jpg" alt="Memory 5" loading="lazy" />
+    </div>
+
+    <!-- 📅 Months Together Counter -->
+    <div class="counter" id="monthsCounter" aria-live="polite" aria-atomic="true">
+      <!-- JavaScript inserts months together here -->
+    </div>
+
+    <!-- 💬 Romantic Quote -->
+    <div class="quote">
+      <p>“I do not love you as if you were salt-rose, or topaz,
+or the arrow of carnations the fire shoots off.
+I love you as certain dark things are to be loved,
+in secret, between the shadow and the soul.<p>
+
+<p>I love you as the plant that never blooms
+but carries in itself the light of hidden flowers;
+thanks to your love a certain solid fragrance,
+risen from the earth, lives darkly in my body.<p>
+
+<p>I love you without knowing how, or when, or from where.
+I love you straightforwardly, without complexities or pride;
+so I love you because I know no other way
+
+than this: <p>
+<p>where I does not exist, nor you,
+so close that your hand on my chest is my hand,
+so close that your eyes close as I fall asleep.”</p>
+      <span>— Pablo Neruda</span>
+    </div>
+
+  </div>
+
+  <!-- 💻 JS for months counter -->
+  <script>
+    const anniversaryDate = new Date("2024-02-14"); // Change to your actual anniversary
+    const today = new Date();
+    const monthsTogether =
+      (today.getFullYear() - anniversaryDate.getFullYear()) * 12 +
+      (today.getMonth() - anniversaryDate.getMonth());
+
+    
+  </script>
+</body>
+</html>
